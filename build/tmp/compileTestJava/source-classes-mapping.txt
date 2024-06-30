@@ -1,0 +1,18 @@
+com/amazon/ata/dynamodbindexdesignandusage/integration/helper/TestDataProvider.java
+ com.amazon.ata.dynamodbindexdesignandusage.integration.helper.TestDataProvider
+com/amazon/ata/dynamodbindexdesignandusage/integration/Phase3Test.java
+ com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test
+com/amazon/ata/dynamodbindexdesignandusage/integration/Phase0Test.java
+ com.amazon.ata.dynamodbindexdesignandusage.integration.Phase0Test
+com/amazon/ata/dynamodbindexdesignandusage/integration/PhaseExtraTest.java
+ com.amazon.ata.dynamodbindexdesignandusage.integration.PhaseExtraTest
+com/amazon/ata/dynamodbindexdesignandusage/integration/dao/InviteDaoTest.java
+ com.amazon.ata.dynamodbindexdesignandusage.integration.dao.InviteDaoTest
+com/amazon/ata/dynamodbindexdesignandusage/integration/Phase2Test.java
+ com.amazon.ata.dynamodbindexdesignandusage.integration.Phase2Test
+com/amazon/ata/dynamodbindexdesignandusage/integration/helper/ActivityProvider.java
+ com.amazon.ata.dynamodbindexdesignandusage.integration.helper.ActivityProvider
+com/amazon/ata/dynamodbindexdesignandusage/integration/dao/EventDaoTest.java
+ com.amazon.ata.dynamodbindexdesignandusage.integration.dao.EventDaoTest
+com/amazon/ata/dynamodbindexdesignandusage/integration/dao/MemberDaoTest.java
+ com.amazon.ata.dynamodbindexdesignandusage.integration.dao.MemberDaoTest

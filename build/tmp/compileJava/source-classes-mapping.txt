@@ -1,0 +1,46 @@
+com/amazon/ata/dynamodbindexdesignandusage/dao/models/Invite.java
+ com.amazon.ata.dynamodbindexdesignandusage.dao.models.Invite
+com/amazon/ata/dynamodbindexdesignandusage/dao/MemberDao.java
+ com.amazon.ata.dynamodbindexdesignandusage.dao.MemberDao
+com/amazon/ata/dynamodbindexdesignandusage/activity/GetInviteActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.GetInviteActivity
+com/amazon/ata/dynamodbindexdesignandusage/activity/GetEventsForOrganizerActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.GetEventsForOrganizerActivity
+com/amazon/ata/dynamodbindexdesignandusage/dao/models/Event.java
+ com.amazon.ata.dynamodbindexdesignandusage.dao.models.Event
+com/amazon/ata/dynamodbindexdesignandusage/activity/GetMemberActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.GetMemberActivity
+com/amazon/ata/dynamodbindexdesignandusage/activity/GetInvitesForMemberActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.GetInvitesForMemberActivity
+com/amazon/ata/dynamodbindexdesignandusage/dependency/DaoModule.java
+ com.amazon.ata.dynamodbindexdesignandusage.dependency.DaoModule
+com/amazon/ata/dynamodbindexdesignandusage/dao/models/CanceledInvite.java
+ com.amazon.ata.dynamodbindexdesignandusage.dao.models.CanceledInvite
+com/amazon/ata/dynamodbindexdesignandusage/activity/CreateInviteActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.CreateInviteActivity
+com/amazon/ata/dynamodbindexdesignandusage/activity/GetInvitesForEventActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.GetInvitesForEventActivity
+com/amazon/ata/dynamodbindexdesignandusage/dao/models/Member.java
+ com.amazon.ata.dynamodbindexdesignandusage.dao.models.Member
+com/amazon/ata/dynamodbindexdesignandusage/converter/ZonedDateTimeConverter.java
+ com.amazon.ata.dynamodbindexdesignandusage.converter.ZonedDateTimeConverter
+com/amazon/ata/dynamodbindexdesignandusage/activity/CreateMemberActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.CreateMemberActivity
+com/amazon/ata/dynamodbindexdesignandusage/activity/DeleteMemberActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.DeleteMemberActivity
+com/amazon/ata/dynamodbindexdesignandusage/dao/InviteDao.java
+ com.amazon.ata.dynamodbindexdesignandusage.dao.InviteDao
+com/amazon/ata/dynamodbindexdesignandusage/activity/GetAttendingEventsForMemberActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.GetAttendingEventsForMemberActivity
+com/amazon/ata/dynamodbindexdesignandusage/activity/GetEventActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.GetEventActivity
+com/amazon/ata/dynamodbindexdesignandusage/activity/GetAcceptedInvitesForEventActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.GetAcceptedInvitesForEventActivity
+com/amazon/ata/dynamodbindexdesignandusage/activity/CancelEventActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.CancelEventActivity
+com/amazon/ata/dynamodbindexdesignandusage/dependency/ServiceComponent.java
+ com.amazon.ata.dynamodbindexdesignandusage.dependency.ServiceComponent
+com/amazon/ata/dynamodbindexdesignandusage/dao/EventDao.java
+ com.amazon.ata.dynamodbindexdesignandusage.dao.EventDao
+com/amazon/ata/dynamodbindexdesignandusage/activity/CreateEventActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.CreateEventActivity
