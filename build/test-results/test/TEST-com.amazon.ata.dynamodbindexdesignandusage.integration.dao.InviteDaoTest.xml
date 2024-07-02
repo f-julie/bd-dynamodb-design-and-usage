@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.amazon.ata.dynamodbindexdesignandusage.integration.dao.InviteDaoTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-01-21T17:51:15" hostname="Lambda-School-Jamies-MacBook-Pro.local" time="0.091">
-  <properties/>
-  <testcase name="deleteInvite_deleteConditionsNotViolated_returnsTrue()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.dao.InviteDaoTest" time="0.079"/>
-  <testcase name="getAcceptedInvites_eventHasAcceptedInvites_returnsInvites()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.dao.InviteDaoTest" time="0.005"/>
-  <testcase name="deleteInvite_deleteConditionsViolated_returnsFalse()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.dao.InviteDaoTest" time="0.005"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

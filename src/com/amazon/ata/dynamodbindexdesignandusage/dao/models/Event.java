@@ -2,12 +2,7 @@ package com.amazon.ata.dynamodbindexdesignandusage.dao.models;
 
 import com.amazon.ata.dynamodbindexdesignandusage.converter.ZonedDateTimeConverter;
 
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperFieldModel;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTypeConverted;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTyped;
+import com.amazonaws.services.dynamodbv2.datamodeling.*;
 
 import java.time.ZonedDateTime;
 import java.util.Objects;
@@ -17,6 +12,7 @@ import java.util.Objects;
  */
 @DynamoDBTable(tableName = "DynamoDBIndexes-Events")
 public class Event {
+    public static final String ORGANIZER_ID_TIME_INDEX = "OrganizerIdTimeIndex";
     private String id;
     private String organizerId;
     private ZonedDateTime time;
@@ -33,7 +29,8 @@ public class Event {
         this.id = id;
     }
 
-    @DynamoDBAttribute(attributeName = "organizerId")
+    //@DynamoDBAttribute(attributeName = "organizerId")
+    @DynamoDBIndexHashKey(attributeName = "organizerId", globalSecondaryIndexName = ORGANIZER_ID_TIME_INDEX)
     public String getOrganizerId() {
         return organizerId;
     }
@@ -42,7 +39,9 @@ public class Event {
         this.organizerId = organizerId;
     }
 
-    @DynamoDBAttribute(attributeName = "time")
+    //@DynamoDBAttribute(attributeName = "time")
+    @DynamoDBIndexRangeKey(attributeName = "time", globalSecondaryIndexName = ORGANIZER_ID_TIME_INDEX)
+
     @DynamoDBTypeConverted(converter = ZonedDateTimeConverter.class)
     public ZonedDateTime getTime() {
         return time;

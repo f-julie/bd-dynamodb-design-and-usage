@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" tests="2" skipped="0" failures="2" errors="0" timestamp="2022-01-21T17:51:12" hostname="Lambda-School-Jamies-MacBook-Pro.local" time="1.545">
+<testsuite name="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" tests="2" skipped="0" failures="2" errors="0" timestamp="2024-07-02T00:43:55" hostname="DESKTOP-URGQT26" time="4.555">
   <properties/>
-  <testcase name="getInvitesForOrganizerActivity_hasEvents_returnsEvents()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" time="1.5">
-    <failure message="com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException: Requested resource not found (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ResourceNotFoundException; Request ID: 4D8T4P34TGKJ9VFQQLL11F2M03VV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)" type="com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException">com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException: Requested resource not found (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ResourceNotFoundException; Request ID: 4D8T4P34TGKJ9VFQQLL11F2M03VV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)
+  <testcase name="getInvitesForOrganizerActivity_hasEvents_returnsEvents()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" time="4.292">
+    <failure message="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: PP81MOFB770EGKQDGOAHFBFF7JVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)" type="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException">com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: PP81MOFB770EGKQDGOAHFBFF7JVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleErrorResponse(AmazonHttpClient.java:1819)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleServiceErrorResponse(AmazonHttpClient.java:1403)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1372)
@@ -20,7 +20,7 @@
 	at com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient.query(AmazonDynamoDBClient.java:3895)
 	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.query(DynamoDBMapper.java:1618)
 	at com.amazonaws.services.dynamodbv2.datamodeling.AbstractDynamoDBMapper.query(AbstractDynamoDBMapper.java:285)
-	at com.amazon.ata.dynamodbindexdesignandusage.dao.EventDao.getEventsForOrganizer(EventDao.java:108)
+	at com.amazon.ata.dynamodbindexdesignandusage.dao.EventDao.getEventsForOrganizer(EventDao.java:110)
 	at com.amazon.ata.dynamodbindexdesignandusage.activity.GetEventsForOrganizerActivity.handleRequest(GetEventsForOrganizerActivity.java:38)
 	at com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test.getInvitesForOrganizerActivity_hasEvents_returnsEvents(Phase3Test.java:60)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -115,8 +115,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase name="getInvitesForOrganizerActivity_noEvents_returnsEmptyLIst()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" time="0.044">
-    <failure message="com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException: Requested resource not found (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ResourceNotFoundException; Request ID: 19B3FFCC5637EDICP7G7CNN2CNVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)" type="com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException">com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException: Requested resource not found (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ResourceNotFoundException; Request ID: 19B3FFCC5637EDICP7G7CNN2CNVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)
+  <testcase name="getInvitesForOrganizerActivity_noEvents_returnsEmptyLIst()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" time="0.262">
+    <failure message="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: 1B0O6TE7I0EL56D9SRJMH1B2BBVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)" type="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException">com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: 1B0O6TE7I0EL56D9SRJMH1B2BBVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleErrorResponse(AmazonHttpClient.java:1819)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleServiceErrorResponse(AmazonHttpClient.java:1403)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1372)
@@ -134,7 +134,7 @@
 	at com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient.query(AmazonDynamoDBClient.java:3895)
 	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.query(DynamoDBMapper.java:1618)
 	at com.amazonaws.services.dynamodbv2.datamodeling.AbstractDynamoDBMapper.query(AbstractDynamoDBMapper.java:285)
-	at com.amazon.ata.dynamodbindexdesignandusage.dao.EventDao.getEventsForOrganizer(EventDao.java:108)
+	at com.amazon.ata.dynamodbindexdesignandusage.dao.EventDao.getEventsForOrganizer(EventDao.java:110)
 	at com.amazon.ata.dynamodbindexdesignandusage.activity.GetEventsForOrganizerActivity.handleRequest(GetEventsForOrganizerActivity.java:38)
 	at com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test.getInvitesForOrganizerActivity_noEvents_returnsEmptyLIst(Phase3Test.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

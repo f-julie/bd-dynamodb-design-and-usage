@@ -26,12 +26,12 @@ com/amazon/ata/dynamodbindexdesignandusage/converter/ZonedDateTimeConverter.java
  com.amazon.ata.dynamodbindexdesignandusage.converter.ZonedDateTimeConverter
 com/amazon/ata/dynamodbindexdesignandusage/activity/CreateMemberActivity.java
  com.amazon.ata.dynamodbindexdesignandusage.activity.CreateMemberActivity
+com/amazon/ata/dynamodbindexdesignandusage/activity/GetAttendingEventsForMemberActivity.java
+ com.amazon.ata.dynamodbindexdesignandusage.activity.GetAttendingEventsForMemberActivity
 com/amazon/ata/dynamodbindexdesignandusage/activity/DeleteMemberActivity.java
  com.amazon.ata.dynamodbindexdesignandusage.activity.DeleteMemberActivity
 com/amazon/ata/dynamodbindexdesignandusage/dao/InviteDao.java
  com.amazon.ata.dynamodbindexdesignandusage.dao.InviteDao
-com/amazon/ata/dynamodbindexdesignandusage/activity/GetAttendingEventsForMemberActivity.java
- com.amazon.ata.dynamodbindexdesignandusage.activity.GetAttendingEventsForMemberActivity
 com/amazon/ata/dynamodbindexdesignandusage/activity/GetEventActivity.java
  com.amazon.ata.dynamodbindexdesignandusage.activity.GetEventActivity
 com/amazon/ata/dynamodbindexdesignandusage/activity/GetAcceptedInvitesForEventActivity.java
