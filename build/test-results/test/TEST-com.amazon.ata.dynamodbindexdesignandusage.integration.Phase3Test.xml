@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" tests="2" skipped="0" failures="2" errors="0" timestamp="2024-07-02T00:43:55" hostname="DESKTOP-URGQT26" time="4.555">
+<testsuite name="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" tests="2" skipped="0" failures="2" errors="0" timestamp="2025-01-11T15:33:59" hostname="DESKTOP-URGQT26" time="3.889">
   <properties/>
-  <testcase name="getInvitesForOrganizerActivity_hasEvents_returnsEvents()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" time="4.292">
-    <failure message="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: PP81MOFB770EGKQDGOAHFBFF7JVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)" type="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException">com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: PP81MOFB770EGKQDGOAHFBFF7JVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)
+  <testcase name="getInvitesForOrganizerActivity_hasEvents_returnsEvents()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" time="3.794">
+    <failure message="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: 6E5825FIANTIFSURQI8QHU8VUJVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)" type="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException">com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: 6E5825FIANTIFSURQI8QHU8VUJVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleErrorResponse(AmazonHttpClient.java:1819)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleServiceErrorResponse(AmazonHttpClient.java:1403)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1372)
@@ -115,8 +115,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase name="getInvitesForOrganizerActivity_noEvents_returnsEmptyLIst()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" time="0.262">
-    <failure message="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: 1B0O6TE7I0EL56D9SRJMH1B2BBVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)" type="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException">com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: 1B0O6TE7I0EL56D9SRJMH1B2BBVV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)
+  <testcase name="getInvitesForOrganizerActivity_noEvents_returnsEmptyLIst()" classname="com.amazon.ata.dynamodbindexdesignandusage.integration.Phase3Test" time="0.092">
+    <failure message="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: NRMCHVK8E7ODDDKNKE7N0SSKP7VV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)" type="com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException">com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException: The table does not have the specified index: OrganizerIdTimeIndex (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: NRMCHVK8E7ODDDKNKE7N0SSKP7VV4KQNSO5AEMVJF66Q9ASUAAJG; Proxy: null)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleErrorResponse(AmazonHttpClient.java:1819)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleServiceErrorResponse(AmazonHttpClient.java:1403)
 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1372)
